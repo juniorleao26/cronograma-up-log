@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cronograma Estratégico - UP LOG Solutions Inc.</title>
+    <title>Mini Site - Cronograma Editável - UP LOG Solutions Inc.</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; background-color: #f8f9fa; }
         header { background-color: #005288; color: white; padding: 20px 40px; text-align: center; }
@@ -26,7 +26,7 @@
 <body>
 
 <header>
-    <h1>Cronograma Estratégico - UP LOG Solutions Inc.</h1>
+    <h1>Cronograma Editável - UP LOG Solutions Inc.</h1>
 </header>
 
 <main>
@@ -35,7 +35,7 @@
     <button onclick="filtrar('pendente')">Pendentes</button>
     <button onclick="filtrar('concluido')">Concluídos</button>
 </div>
-<div class="fase">Fase 1: Estruturação e Identidade da Empresa (Dias 0 a 15)</div>
+<div class="fase">Fase 1: Estruturação Legal e Administrativa (Dias 0 a 15)</div>
 <div class="conteudo" id="fase0">
 <div class="barra"><div class="progresso" id="progresso0" style="width: 0%;"></div></div>
 
@@ -77,31 +77,31 @@
         
         <label>
             <input type="checkbox" id="f0t3" onchange="atualizarProgresso(0)">
-            Pesquisa e contratação de contador
+            Configuração do sistema de gestão
         </label>
         <div class="tarefa-info">
             Prazo: 11/04/2025 |
             Responsável: 
             <select id="resp0_3" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
-            </select>
-        </div>
-        
-        <label>
-            <input type="checkbox" id="f0t4" onchange="atualizarProgresso(0)">
-            Criação de identidade visual e e-mail corporativo
-        </label>
-        <div class="tarefa-info">
-            Prazo: 13/04/2025 |
-            Responsável: 
-            <select id="resp0_4" onchange="salvarStatus()">
                 <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         
         <label>
+            <input type="checkbox" id="f0t4" onchange="atualizarProgresso(0)">
+            Pesquisa e contratação de contador
+        </label>
+        <div class="tarefa-info">
+            Prazo: 13/04/2025 |
+            Responsável: 
+            <select id="resp0_4" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        
+        <label>
             <input type="checkbox" id="f0t5" onchange="atualizarProgresso(0)">
-            Criação de website institucional
+            Criação de identidade visual e e-mail corporativo
         </label>
         <div class="tarefa-info">
             Prazo: 15/04/2025 |
@@ -110,29 +110,17 @@
                 <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
-        
-        <label>
-            <input type="checkbox" id="f0t6" onchange="atualizarProgresso(0)">
-            Configuração de redes sociais da empresa
-        </label>
-        <div class="tarefa-info">
-            Prazo: 16/04/2025 |
-            Responsável: 
-            <select id="resp0_6" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
-            </select>
         </div>
-        </div>
-<div class="fase">Fase 2: Captação de Recursos e Planejamento Estratégico (Dias 15 a 30)</div>
+<div class="fase">Fase 2: Compra e Preparação dos Veículos (Dias 10 a 30)</div>
 <div class="conteudo" id="fase1">
 <div class="barra"><div class="progresso" id="progresso1" style="width: 0%;"></div></div>
 
         <label>
             <input type="checkbox" id="f1t0" onchange="atualizarProgresso(1)">
-            Prospecção de novos investidores
+            Análise de veículos em leilão (Copart, IAAI, Manheim)
         </label>
         <div class="tarefa-info">
-            Prazo: 17/04/2025 |
+            Prazo: 13/04/2025 |
             Responsável: 
             <select id="resp1_0" onchange="salvarStatus()">
                 <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
@@ -141,7 +129,7 @@
         
         <label>
             <input type="checkbox" id="f1t1" onchange="atualizarProgresso(1)">
-            Estudo para aquisição de novos veículos
+            Aquisição, inspeção e documentação dos veículos
         </label>
         <div class="tarefa-info">
             Prazo: 21/04/2025 |
@@ -153,7 +141,7 @@
         
         <label>
             <input type="checkbox" id="f1t2" onchange="atualizarProgresso(1)">
-            Definição de plano de reinvestimento do lucro
+            Registro e seguro dos veículos
         </label>
         <div class="tarefa-info">
             Prazo: 26/04/2025 |
@@ -165,38 +153,50 @@
         
         <label>
             <input type="checkbox" id="f1t3" onchange="atualizarProgresso(1)">
-            Controle de fluxo de caixa e projeções
+            Instalação de GPS e rastreamento
         </label>
         <div class="tarefa-info">
             Prazo: 29/04/2025 |
             Responsável: 
             <select id="resp1_3" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        
+        <label>
+            <input type="checkbox" id="f1t4" onchange="atualizarProgresso(1)">
+            Configuração de planilha de controle de manutenção
+        </label>
+        <div class="tarefa-info">
+            Prazo: 01/05/2025 |
+            Responsável: 
+            <select id="resp1_4" onchange="salvarStatus()">
                 <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         </div>
-<div class="fase">Fase 3: Compra e Preparação dos Veículos (Dias 30 a 45)</div>
+<div class="fase">Fase 3: Captação de Cargas e Início das Operações (Dias 30 a 45)</div>
 <div class="conteudo" id="fase2">
 <div class="barra"><div class="progresso" id="progresso2" style="width: 0%;"></div></div>
 
         <label>
             <input type="checkbox" id="f2t0" onchange="atualizarProgresso(2)">
-            Análise de veículos em leilão (Copart, IAAI, Manheim)
+            Contratação de motoristas experientes
         </label>
         <div class="tarefa-info">
             Prazo: 03/05/2025 |
             Responsável: 
             <select id="resp2_0" onchange="salvarStatus()">
-                <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         
         <label>
             <input type="checkbox" id="f2t1" onchange="atualizarProgresso(2)">
-            Aquisição, inspeção e documentação dos veículos
+            Cadastro em plataformas de cargas
         </label>
         <div class="tarefa-info">
-            Prazo: 07/05/2025 |
+            Prazo: 06/05/2025 |
             Responsável: 
             <select id="resp2_1" onchange="salvarStatus()">
                 <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
@@ -205,74 +205,74 @@
         
         <label>
             <input type="checkbox" id="f2t2" onchange="atualizarProgresso(2)">
-            Registro e seguro dos veículos
+            Obtenção das primeiras rotas spot
         </label>
         <div class="tarefa-info">
-            Prazo: 11/05/2025 |
+            Prazo: 09/05/2025 |
             Responsável: 
             <select id="resp2_2" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
-            </select>
-        </div>
-        
-        <label>
-            <input type="checkbox" id="f2t3" onchange="atualizarProgresso(2)">
-            Instalação de GPS e rastreamento
-        </label>
-        <div class="tarefa-info">
-            Prazo: 13/05/2025 |
-            Responsável: 
-            <select id="resp2_3" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
-            </select>
-        </div>
-        
-        <label>
-            <input type="checkbox" id="f2t4" onchange="atualizarProgresso(2)">
-            Configuração de planilha de controle de manutenção
-        </label>
-        <div class="tarefa-info">
-            Prazo: 16/05/2025 |
-            Responsável: 
-            <select id="resp2_4" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
-            </select>
-        </div>
-        </div>
-<div class="fase">Fase 4: Captação de Cargas e Início das Operações (Dias 45 a 60)</div>
-<div class="conteudo" id="fase3">
-<div class="barra"><div class="progresso" id="progresso3" style="width: 0%;"></div></div>
-
-        <label>
-            <input type="checkbox" id="f3t0" onchange="atualizarProgresso(3)">
-            Contratação de motoristas experientes
-        </label>
-        <div class="tarefa-info">
-            Prazo: 17/05/2025 |
-            Responsável: 
-            <select id="resp3_0" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
-            </select>
-        </div>
-        
-        <label>
-            <input type="checkbox" id="f3t1" onchange="atualizarProgresso(3)">
-            Cadastro em plataformas de cargas
-        </label>
-        <div class="tarefa-info">
-            Prazo: 19/05/2025 |
-            Responsável: 
-            <select id="resp3_1" onchange="salvarStatus()">
                 <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         
         <label>
-            <input type="checkbox" id="f3t2" onchange="atualizarProgresso(3)">
-            Obtenção das primeiras rotas spot
+            <input type="checkbox" id="f2t3" onchange="atualizarProgresso(2)">
+            Treinamento com motoristas sobre processos da empresa
         </label>
         <div class="tarefa-info">
-            Prazo: 21/05/2025 |
+            Prazo: 11/05/2025 |
+            Responsável: 
+            <select id="resp2_3" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        
+        <label>
+            <input type="checkbox" id="f2t4" onchange="atualizarProgresso(2)">
+            Checklist de segurança veicular
+        </label>
+        <div class="tarefa-info">
+            Prazo: 13/05/2025 |
+            Responsável: 
+            <select id="resp2_4" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        </div>
+<div class="fase">Fase 4: Execução e Otimização Operacional (Dias 45 a 75)</div>
+<div class="conteudo" id="fase3">
+<div class="barra"><div class="progresso" id="progresso3" style="width: 0%;"></div></div>
+
+        <label>
+            <input type="checkbox" id="f3t0" onchange="atualizarProgresso(3)">
+            Operação contínua das rotas
+        </label>
+        <div class="tarefa-info">
+            Prazo: 17/05/2025 |
+            Responsável: 
+            <select id="resp3_0" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" selected>Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        
+        <label>
+            <input type="checkbox" id="f3t1" onchange="atualizarProgresso(3)">
+            Monitoramento de custos e lucratividade
+        </label>
+        <div class="tarefa-info">
+            Prazo: 26/05/2025 |
+            Responsável: 
+            <select id="resp3_1" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        
+        <label>
+            <input type="checkbox" id="f3t2" onchange="atualizarProgresso(3)">
+            Ajustes estratégicos nas operações
+        </label>
+        <div class="tarefa-info">
+            Prazo: 31/05/2025 |
             Responsável: 
             <select id="resp3_2" onchange="salvarStatus()">
                 <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
@@ -281,10 +281,10 @@
         
         <label>
             <input type="checkbox" id="f3t3" onchange="atualizarProgresso(3)">
-            Treinamento com motoristas sobre processos da empresa
+            Primeiro relatório mensal de desempenho
         </label>
         <div class="tarefa-info">
-            Prazo: 25/05/2025 |
+            Prazo: 05/06/2025 |
             Responsável: 
             <select id="resp3_3" onchange="salvarStatus()">
                 <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
@@ -293,50 +293,50 @@
         
         <label>
             <input type="checkbox" id="f3t4" onchange="atualizarProgresso(3)">
-            Checklist de segurança veicular
+            Revisão e melhoria de rotas
         </label>
         <div class="tarefa-info">
-            Prazo: 29/05/2025 |
+            Prazo: 10/06/2025 |
             Responsável: 
             <select id="resp3_4" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+                <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         </div>
-<div class="fase">Fase 5: Execução e Otimização Operacional (Dias 60 a 90)</div>
+<div class="fase">Fase 5: Escala, Marketing e Finanças (Dias 75 a 90)</div>
 <div class="conteudo" id="fase4">
 <div class="barra"><div class="progresso" id="progresso4" style="width: 0%;"></div></div>
 
         <label>
             <input type="checkbox" id="f4t0" onchange="atualizarProgresso(4)">
-            Operação contínua das rotas
+            Criação de website institucional
         </label>
         <div class="tarefa-info">
-            Prazo: 02/06/2025 |
+            Prazo: 16/06/2025 |
             Responsável: 
             <select id="resp4_0" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" selected>Motorista</option><option value="Outro" >Outro</option>
+                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         
         <label>
             <input type="checkbox" id="f4t1" onchange="atualizarProgresso(4)">
-            Monitoramento de custos e lucratividade
+            Configuração de redes sociais da empresa
         </label>
         <div class="tarefa-info">
-            Prazo: 10/06/2025 |
+            Prazo: 18/06/2025 |
             Responsável: 
             <select id="resp4_1" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+                <option value="Junior" >Junior</option><option value="Gilberto" selected>Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         
         <label>
             <input type="checkbox" id="f4t2" onchange="atualizarProgresso(4)">
-            Ajustes estratégicos nas operações
+            Prospecção de novos investidores
         </label>
         <div class="tarefa-info">
-            Prazo: 15/06/2025 |
+            Prazo: 20/06/2025 |
             Responsável: 
             <select id="resp4_2" onchange="salvarStatus()">
                 <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
@@ -345,25 +345,37 @@
         
         <label>
             <input type="checkbox" id="f4t3" onchange="atualizarProgresso(4)">
-            Primeiro relatório mensal de desempenho
+            Estudo para aquisição de novos veículos
         </label>
         <div class="tarefa-info">
-            Prazo: 20/06/2025 |
+            Prazo: 23/06/2025 |
             Responsável: 
             <select id="resp4_3" onchange="salvarStatus()">
-                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+                <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         
         <label>
             <input type="checkbox" id="f4t4" onchange="atualizarProgresso(4)">
-            Revisão e melhoria de rotas
+            Definição de plano de reinvestimento do lucro
+        </label>
+        <div class="tarefa-info">
+            Prazo: 25/06/2025 |
+            Responsável: 
+            <select id="resp4_4" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            </select>
+        </div>
+        
+        <label>
+            <input type="checkbox" id="f4t5" onchange="atualizarProgresso(4)">
+            Controle de fluxo de caixa e projeções
         </label>
         <div class="tarefa-info">
             Prazo: 28/06/2025 |
             Responsável: 
-            <select id="resp4_4" onchange="salvarStatus()">
-                <option value="Junior" selected>Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" >Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
+            <select id="resp4_5" onchange="salvarStatus()">
+                <option value="Junior" >Junior</option><option value="Gilberto" >Gilberto</option><option value="Marcelo" selected>Marcelo</option><option value="Motorista" >Motorista</option><option value="Outro" >Outro</option>
             </select>
         </div>
         </div>
